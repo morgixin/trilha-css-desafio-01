@@ -1,0 +1,205 @@
+@import url(fonts.css);
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Raleway";
+
+    background-image: url(../images/woman-code.png);
+    background-position: 0;
+    background-size: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+/* setting fonts and weights */
+h1 {
+    margin: 0px;
+
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 42px;
+    
+    background: -webkit-linear-gradient(rgba(51, 168, 219, 1), rgba(20, 114, 183, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    margin: 0px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: rgba(51, 168, 219, 1);
+}
+
+p {
+    font-weight: 400;
+    color: #fff
+}
+
+/* button styling */
+button {
+    position: relative;
+    padding: 19px 42px;
+    width: 326px;
+
+    font-weight: 900;
+    text-transform: uppercase;
+
+    border: none;
+    outline: none;
+    background: linear-gradient(rgba(51, 168, 219, 1), rgba(20, 114, 183, 1));
+
+    z-index: 1;
+}
+
+button::before {
+    content: "";
+
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+
+    background-color: #000;
+    z-index: -1;
+}
+
+button::after {
+    content: "QUERO ME INSCREVER";
+    font-size: 16px;
+    letter-spacing: 2px;
+    background: linear-gradient(rgba(51, 168, 219, 1), rgba(20, 114, 183, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* styling banner-content section */
+.banner-content {
+    /* background-image: url("../images/banner.png"); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(rgb(0, 0, 0), rgba(49, 168, 221, 0.2), rgb(0, 0, 0));
+}
+
+.banner-content p {
+    font-size: 20px;
+    width: 600px;
+    text-align: center;
+}
+
+.banner {
+    /* set background image and gradient */
+    background-image: url("../images/banner.png");
+    background-size: 100% 732px;
+    background-color: rgb(0, 0, 0);
+
+    padding: 72px 0px;
+    border-bottom: 1px solid rgba(51, 168, 219, 1);
+}
+
+/* setting background dif between sections and bckg img */
+#course-content {
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0;
+    padding: 100px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-bottom: 0.6px solid rgba(51, 168, 219, 1);
+}
+
+#course-content p {
+    width: 800px;
+    text-align: center;
+}
+
+.modules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.module {
+    background: rgba(37, 37, 37, 1);
+
+    padding: 16px 60px;
+    border-radius: 28px;
+    border: 1px solid rgba(51, 168, 219, 1);
+    
+    box-shadow: inset -6px 8px 8px 0px #0f0f0f;
+
+    text-align: center;
+
+    color: white;
+}
+
+.module span {
+    color: rgba(51, 168, 219, 1);
+}
+
+
+/* transform-world section */
+#transform-world {
+    padding: 64px 0px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    border-bottom: 0.6px solid rgba(51, 168, 219, 1);
+}
+
+#transform-world p {
+    font-weight: 900;
+    font-size: 40px;
+    width: 254px;
+    text-transform: lowercase;
+    margin-left: 200px;
+    text-shadow: 3px  0px 0px rgba(51, 168, 219, 1);
+}
+
+/* professional-challenges section */
+#professional-challenges {
+    padding: 100px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* width: 700px; */
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(51, 168, 219, 1);
+}
+
+#professional-challenges h2 {
+    width: 800px;
+    text-align: center;
+}
+
+#professional-challenges p {
+    width: 780px;
+    text-align: center;
+}
+
+footer {
+    padding: 64px 0px;
+
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
